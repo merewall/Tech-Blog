@@ -1,4 +1,7 @@
 {{!-- each loop over posts --}}
-{{!-- handled by homeRoutes '/' GET request which will pull all posts from db --}}
-{{!-- conditional IF to display Logout and Dashboard buttons }}
-{{!-- if extra time: add a hello, {{user}} button for when loggedIn --}}
+<!-- handled by homeRoutes '/' GET request which will pull all posts from db -->
+{{#each posts as |post|}}
+{{> post-details}}
+{{/each}}
+
+

@@ -1,1 +1,12 @@
 {{!-- card for each post --}}
+<section>
+  <a href="/posts/{{id}}">
+    <header>
+        <h3>{{title}}</h3>
+        <p>Posted by {{user.name}} on {{format_date date_created}}</p>
+    </header>
+    <div>
+      <p>{{text}}</p>
+    </div>
+  </a>
+</section>

@@ -1,3 +1,63 @@
 {{!-- form for capturing new post creation --}}
 {{!-- link back to user dashboard upon submit --}}
 {{!-- /posts/ --}}
+<!-- <section>
+    <header>
+        <h3>Create Post</h3>
+    </header>
+    <div>
+        <form class="new-post-form">
+            <label for="title">
+                Post Title:
+            </label>
+            <br />
+            <textarea id="title" name="title" rows="2" cols="30">
+            {{title}}
+            </textarea>
+            <br />
+            <label for="text">
+                Text:
+            </label>
+            <br />
+            <textarea id="text" name="text" rows="5" cols="30">
+            {{text}}
+            </textarea>
+            <br />
+            <label for="guest_name">
+                Guest Name:
+            </label>
+            <br />
+            <textarea id="guest_name" name="guest_name" rows="2" cols="30">
+            {{guest_name}}
+            </textarea>
+            <br />
+            <br />
+            <button type="submit" value="Submit">
+                Create
+            </button>
+        </form>
+    </div>
+</section> -->
+
+<div class="row">
+    <div class="col-md-6">
+        <h2>Add Post</h2>
+
+        <form class="form add-post-form">
+        <div class="form-group">
+            <label for="title">title:</label>
+            <input class="form-input" type="text" id="title" />
+        </div>
+        <div class="form-group">
+            <label for="text">text:</label>
+            <input class="form-input" type="text" id="text" />
+        </div>
+        <div class="form-group">
+            <button class="btn btn-primary" type="submit">Create Post</button>
+        </div>
+        </form>
+    </div>
+</div>
+    
+
+<script src="./js/addpost.js"></script>

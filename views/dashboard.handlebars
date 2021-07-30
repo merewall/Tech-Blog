@@ -1,0 +1,7 @@
+{{!-- each loop over a user's posts --}}
+{{!-- create new post button --}}
+{{!-- link to addpost.handlebars --}}
+{{#each posts as |post|}}
+{{> user-post-details}}
+{{/each}}
+<button id="add-post" class="btn-no-style"><a href="/addpost">Create Post</a></button>

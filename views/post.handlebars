@@ -1,3 +1,54 @@
 {{!-- partial of user-post-details that has added update and delete icons --}}
 {{!-- an EACH loop of comments from /posts/:id get request --}}
 {{!-- form for adding comment with submit button --}}
+{{> post-details}}
+{{#if userPost}}
+<div>
+    <a href="/editpost/{{id}}"><button id="edit-post" class="btn-no-style">Edit</button></a>
+    <button id="delete-post" class="btn-no-style" data-id="{{id}}">Delete</button>
+</div>
+{{/if}}
+{{#each comments as |comment|}}
+{{> comment-details}}
+{{/each}}
+<!-- <section>
+    <header>
+        <h3>Add Comment</h3>
+    </header>
+    <div>
+        <form class="new-comment-form">
+            <label for="comment">
+                Comment:
+            </label>
+            <br />
+            <textarea id="comment" name="comment" rows="5" cols="30">
+            {{comment}}
+            </textarea>
+            <br />
+            <br />
+            <button type="submit" value="Submit">
+                Submit
+            </button>
+        </form>
+    </div>
+</section> -->
+<div class="row">
+  <div class="col-md-6">
+    <h2>Add Comment</h2>
+
+    <form class="form new-comment-form">
+      <div class="form-group">
+        <label for="comment">comment:</label>
+        <input class="form-input" type="text" id="comment" />
+      </div>
+      <div class="form-group">
+        <button class="btn btn-primary" type="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<script src="/js/addcomment.js"></script>
+{{#if userPost}}
+<script src="/js/deletepost.js"></script>
+{{/if}}
