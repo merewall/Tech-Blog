@@ -1,6 +1,6 @@
 # Tech-Blog
 
-A CMS-style ![blog site](https://tech-blog-mw.herokuapp.com/) where developers can publish their blog posts and comment on other developers' posts.
+A CMS-style [blog site](https://tech-blog-mw.herokuapp.com/) where developers can publish their blog posts and comment on other developers' posts.
 
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -113,40 +113,42 @@ _If accessing deployed Heroku application..._
 
 _Homepage:_
 
-![tech*nicality blog homepage](https://github.com/merewall/Tech-Blog/tree/main/public/images/homepage.PNG)
+![tech*nicality blog homepage](https://github.com/merewall/Tech-Blog/blob/main/public/images/homepage.PNG)
 
 _Mobile Homepage:_
-![tech*nicality blog homepage](https://github.com/merewall/Tech-Blog/tree/main/public/images/homepage-mobile.PNG)
+
+![tech*nicality blog homepage](https://github.com/merewall/Tech-Blog/blob/main/public/images/homepage-mobile.PNG)
 
 _Login page:_
 
-![log on page](https://github.com/merewall/Tech-Blog/tree/main/public/images/login.PNG)
+![log on page](https://github.com/merewall/Tech-Blog/blob/main/public/images/login.PNG)
 
 _Create account page:_
 
-![create account page](https://github.com/merewall/Tech-Blog/tree/main/public/images/signup.PNG)
+![create account page](https://github.com/merewall/Tech-Blog/blob/main/public/images/signup.PNG)
 
 _Individual post page with comments:_
+
 _Post page when logged out:_
-![logged out post page with comments](https://github.com/merewall/Tech-Blog/tree/main/public/images/logged-out-post.PNG)
+![logged out post page with comments](https://github.com/merewall/Tech-Blog/blob/main/public/images/logged-out-post.PNG)
 
 _Post page when logged in:_
-![logged in post page with comments and add comment option](https://github.com/merewall/Tech-Blog/tree/main/public/images/logged-in-post.PNG)
+![logged in post page with comments and add comment option](https://github.com/merewall/Tech-Blog/blob/main/public/images/logged-in-post.PNG)
 
 _User post page with edit/delete options:_
-![user post with edit/delete buttons](https://github.com/merewall/Tech-Blog/tree/main/public/images/edit-delete-buttons.PNG)
+![user post with edit/delete buttons](https://github.com/merewall/Tech-Blog/blob/main/public/images/edit-delete-buttons.PNG)
 
 _Dashboard:_
 
-![user dashboard page with user posts](https://github.com/merewall/Tech-Blog/tree/main/public/images/dashboard.PNG)
+![user dashboard page with user posts](https://github.com/merewall/Tech-Blog/blob/main/public/images/dashboard.PNG)
 
 _Create post page:_
 
-![create post form](https://github.com/merewall/Tech-Blog/tree/main/public/images/create-post.PNG)
+![create post form](https://github.com/merewall/Tech-Blog/blob/main/public/images/create-post.PNG)
 
 _Edit post form:_
 
-![edit post form](https://github.com/merewall/Tech-Blog/tree/main/public/images/edit-post.PNG)
+![edit post form](https://github.com/merewall/Tech-Blog/blob/main/public/images/edit-post.PNG)
 
 ## LICENSE
 
