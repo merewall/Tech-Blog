@@ -1,39 +1,35 @@
-// handling dashboard button
-// fetch get request for /users/:id and display user.handlebars
+// FUNCTION FOR HANDLING EDIT POST FORM
 async function editFormHandler(event) {
-    event.preventDefault();
-    const title = document.querySelector('#title').value;
-    const text = document.querySelector('#text').value;
+  event.preventDefault();
 
-    const post_id = parseInt(document.location.href.split("/").pop());
+  // COLLECT VALUES FROM EDIT POST FORM
+  const title = document.querySelector('#title').value;
+  const text = document.querySelector('#text').value;
+
+  // GRAB THE POST ID # FROM THE URL
+  const post_id = parseInt(document.location.href.split("/").pop());
+
+  if (title && text) {
+    // SEND A PUT REQUEST TO THE API ENDPOINT TO EDIT POST
+    const response = await fetch(`/api/posts/${post_id}`, {
+        method: 'PUT',
+        body: JSON.stringify({
+          title,
+          text,
+        }),
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      });
   
-    if (title && text) {
-        const response = await fetch(`/api/posts/${post_id}`, {
-            method: 'PUT',
-            body: JSON.stringify({
-              title,
-              text,
-            }),
-            headers: {
-              'Content-Type': 'application/json',
-            },
-          });
-      
-          if (response.ok) {
-              document.location.replace(`/posts/${post_id}`);
-          } else {
-              alert(response.statusText);
-          }
-    }
-    
-  
-    // What happens if the response is ok?
-    // If the response is ok, that means that the dish was updated successfully. 
-    // if (response.ok) {
-    //   document.location.replace(window.location.pathname);
-    // } else {
-    //   alert('Failed to edit dish');
-    // }
+      if (response.ok) {
+        // IF SUCCESSFUL, REDIRECT TO THE UPDATED POST PAGE
+        document.location.replace(`/posts/${post_id}`);
+      } else {
+        alert(response.statusText);
+      }
   }
-  
-  document.querySelector('.edit-post-form').addEventListener('submit', editFormHandler);
+}
+
+// CLICK EVENT LISTENER FOR SUBMIT BUTTON ON EDIT POST FORM
+document.querySelector('.edit-post-form').addEventListener('submit', editFormHandler);
