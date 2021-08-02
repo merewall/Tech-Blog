@@ -26,6 +26,7 @@ router.get('/', async (req, res) => {
       posts,
       loggedIn: req.session.loggedIn,
       userId: req.session.userId,
+      userName: req.session.userName,
     });
   } catch (err) {
     console.log(err);
@@ -81,6 +82,7 @@ router.get('/posts/:id', async (req, res) => {
       loggedIn: req.session.loggedIn,
       userId: req.session.userId, 
       userPost: req.session.userPost,
+      userName: req.session.userName,
       comments,
     });
   } catch (err) {
@@ -113,6 +115,7 @@ router.get('/dashboard', withAuth, async (req, res) => {
       posts, 
       loggedIn: req.session.loggedIn,
       userId: req.session.userId,
+      userName: req.session.userName,
     });
   } catch (err) {
     res.status(500).json(err);
@@ -149,6 +152,7 @@ router.get('/addpost', (req, res) => {
   res.render('addpost', {
     loggedIn: req.session.loggedIn,
     userId: req.session.userId,
+    userName: req.session.userName,
   });
 });
 
@@ -166,6 +170,7 @@ router.get('/editpost/:id', async (req, res) => {
       ...post,
       loggedIn: req.session.loggedIn,
       userId: req.session.userId, 
+      userName: req.session.userName,
     });
   } catch (err) {
     res.status(500).json(err);
