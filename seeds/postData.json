@@ -1,14 +1,14 @@
 [
   {
-    "title": "Music Near Me",
-    "text": "A mobile app that will send you notifications whenever a concert is playing in your area."
+    "title": "What is Pull Request ?",
+    "text": "Pull Request is the way Github provides for author of the code to share his/her code with others, and to allow others to take a look at your code before you merge it to integration branch and leave comments."
   },
   {
-    "title": "The Ultimate Tech Quiz",
-    "text": "A web app that will give users 10 new technical questions each day and track their progress in things like programming, cybersecurity, database architecture, and more!"
+    "title": "Top 5 WordPress AB Testing Plugins",
+    "text": "1. Google Content Experiments, 2. Optimizely, 3. Nelio, 4. Visual Website Optimizer, 5. Icegram."
   },
   {
-    "title": "Roll 'Em Up",
-    "text": "A game for Windows and macOS where players move a ball through a series of increasingly challenging mazes."
+    "title": "Programming Is Learned Faster With These 7 Tips",
+    "text": "1. Stop waiting for the right time, 2. Revisit the programming basics, 3. Code by hand, 4. Use online resources, 5. Escape the samples, 6. Know when to ask for help (and when not to), 7. Step away from the screen."
   }
 ]
