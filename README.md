@@ -113,33 +113,40 @@ _If accessing deployed Heroku application..._
 
 _Homepage:_
 
-![tech*nicality blog homepage]()
+![tech*nicality blog homepage](https://github.com/merewall/Tech-Blog/tree/main/public/images/homepage.PNG)
 
-_Logon page:_
+_Mobile Homepage:_
+![tech*nicality blog homepage](https://github.com/merewall/Tech-Blog/tree/main/public/images/homepage-mobile.PNG)
 
-![log on page]()
+_Login page:_
+
+![log on page](https://github.com/merewall/Tech-Blog/tree/main/public/images/login.PNG)
 
 _Create account page:_
 
-![create account page]()
+![create account page](https://github.com/merewall/Tech-Blog/tree/main/public/images/signup.PNG)
 
 _Individual post page with comments:_
-
 _Post page when logged out:_
-
-![logged out post page with comments]()
+![logged out post page with comments](https://github.com/merewall/Tech-Blog/tree/main/public/images/logged-out-post.PNG)
 
 _Post page when logged in:_
+![logged in post page with comments and add comment option](https://github.com/merewall/Tech-Blog/tree/main/public/images/logged-in-post.PNG)
 
-![logged in post page with comments and add comment option]()
+_User post page with edit/delete options:_
+![user post with edit/delete buttons](https://github.com/merewall/Tech-Blog/tree/main/public/images/edit-delete-buttons.PNG)
+
+_Dashboard:_
+
+![user dashboard page with user posts](https://github.com/merewall/Tech-Blog/tree/main/public/images/dashboard.PNG)
 
 _Create post page:_
 
-![create post form]()
+![create post form](https://github.com/merewall/Tech-Blog/tree/main/public/images/create-post.PNG)
 
 _Edit post form:_
 
-![edit post form]()
+![edit post form](https://github.com/merewall/Tech-Blog/tree/main/public/images/edit-post.PNG)
 
 ## LICENSE
 
@@ -171,7 +178,7 @@ No current tests for this application.
 
 _Other Sources:_
 
-- [x] postData.json sourced from blog posts on ![My Programming Blog](https://myprogrammingblog.com/page/2/)
+- [x] postData.json sourced from blog posts on [My Programming Blog](https://myprogrammingblog.com/page/2/)
 
 ## LINKS
 
