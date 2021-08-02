@@ -31,7 +31,11 @@
         <li><a href="/login" class="nav-link"><i class="material-icons left" id="login">vpn_key</i>login</a></li>
         {{/if}}
         <!-- USER DASHBOARD BUTTON -->
+        {{#if loggedIn}}
+        <li><a href="/dashboard" class="nav-link"><i class="material-icons left" id="dashboard">person_outline</i>{{userName}}'s tech talk</a></li>
+        {{else}}
         <li><a href="/dashboard" class="nav-link"><i class="material-icons left" id="dashboard">person_outline</i>my tech talk</a></li>
+        {{/if}}
       </ul>
     </div>
     <!-- PAGE TITLE -->
