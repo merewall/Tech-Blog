@@ -1,8 +1,11 @@
+// BRING IN SEQUELIZE MODELS AND ACCESS TO DB CONNECTION
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
+// CREATE A COMMENT MODEL
 class Comment extends Model {}
 
+// INITIATE THE COMMENT MODEL WITH SPECIFIED PROPERTIES
 Comment.init(
   {
     id: {
@@ -20,6 +23,7 @@ Comment.init(
       allowNull: false,
       defaultValue: DataTypes.NOW,
     },
+    // FOREIGN KEY FROM USER MODEL
     user_id: {
       type: DataTypes.INTEGER,
       references: {
@@ -27,6 +31,7 @@ Comment.init(
         key: 'id',
       },
     },
+    // FOREIGN KEY FROM POST MODEL
     post_id: {
         type: DataTypes.INTEGER,
         references: {
@@ -44,4 +49,5 @@ Comment.init(
   }
 );
 
+// EXPORT THE COMMENT MODEL FOR USE IN ROUTES
 module.exports = Comment;
