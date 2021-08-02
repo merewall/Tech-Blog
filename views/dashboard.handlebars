@@ -1,7 +1,8 @@
-{{!-- each loop over a user's posts --}}
-{{!-- create new post button --}}
-{{!-- link to addpost.handlebars --}}
+<!-- RENDERING THE POST-DETAILS TEMPLATE FOR EACH OF THE USER'S POST -->
 {{#each posts as |post|}}
-{{> user-post-details}}
+{{> post-details}}
 {{/each}}
-<button id="add-post" class="btn-no-style"><a href="/addpost">Create Post</a></button>
+<!-- BUTTON TO REDIRECT TO CREATING A NEW BLOG POST -->
+<div class="center">
+    <button id="add-post" class="btn btn-primary"><a href="/addpost" id="create-post">Create Post</a></button>
+</div>

@@ -1,36 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    {{!-- link to stylesheet --}}
-    <title>Tech Blog</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- LINK TO MATERIALIZE CSS FRAMEWORK -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!-- LINK TO MATERIALIZE ICONS -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- LINK TO OSWALD GOOGLE FONT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+  <!-- LINK TO CSS STYLESHEET -->
+  <link rel="stylesheet" href="/css/style.css">
+  <title>tech*nicality</title>
 </head>
 <body>
-  <header>
-    <h1>Tech Blog</h1>
-  </header>
-  <nav>
-    <a href="/">Home</a>
-    {{#if loggedIn}}
-    <button id="logout" class="btn-no-style">Logout</button>
-    {{else}}
-    <a href="/login">Login</a>
-    {{/if}}
-    <button id="dashboard" class="btn-no-style"><a href="/dashboard">Dashboard</a></button>
+  <!-- NAV BAR -->
+  <nav class="nav-extended">
+    <div class="nav-wrapper">
+      {{!-- <a href="#!" class="brand-logo">Logo</a> --}}
+      <ul class="right">
+        <!-- HOME BUTTON -->
+        <li><a href="/" class="nav-link"><i class="material-icons left" id="home">home</i>home</a></li>
+        <!-- LOGOUT/LOGIN BUTTONS -->
+        {{#if loggedIn}}
+        <li><a href="#" class="nav-link" id="logout-link"><i class="material-icons left" id="logout">lock_outline</i>logout</a></li>
+        {{else}}
+        <li><a href="/login" class="nav-link"><i class="material-icons left" id="login">vpn_key</i>login</a></li>
+        {{/if}}
+        <!-- USER DASHBOARD BUTTON -->
+        <li><a href="/dashboard" class="nav-link"><i class="material-icons left" id="dashboard">person_outline</i>my tech talk</a></li>
+      </ul>
+    </div>
+    <!-- PAGE TITLE -->
+    <div class="nav-content center">
+      <span class="nav-title">tech*nicality blog</span>
+    </div>
   </nav>
   <main>
-    <div class="all-posts">
+    <div class="container">
+      <!-- .HANDLEBARS TEMPLATES RENDER HERE -->
       {{{body}}}
     </div>
   </main>
-  <footer>
-      <p>Presented by Blogger Gal</p>
+  <!-- FOOTER FOR COPYWRITE -->
+  <footer class="page-footer">
+    <div class="container center-align my-footer">
+    © 2021 tech*nically meredith
+    </div>
   </footer>
+
+  <!-- LINK TO JAVASCRIPT -->
   {{#if loggedIn}}
   <script src="/js/logout.js"></script>
   {{/if}}
+
+  <!-- LINK TO MATERIALIZE JAVASCRIPT -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
 </html>
 
