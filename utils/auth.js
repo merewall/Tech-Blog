@@ -1,10 +1,9 @@
 const withAuth = (req, res, next) => {
-  // If the user is not logged in, redirect the user to the login page
+  // IF THE USER IS NOT LOGGED IN, REDIRECT TO THE LOGIN PAGE
   if (!req.session.loggedIn) {
     res.redirect('/login');
   } else {
-    // If the user is logged in, execute the route function that will allow them to view the gallery
-    // We call next() if the user is authenticated
+    // IF THE USER IS LOGGED IN (AUTHENTICATED), EXECUTE THE NEXT FUNCTION
     next();
   }
 };
