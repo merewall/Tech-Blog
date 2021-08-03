@@ -55,7 +55,9 @@ router.get('/posts/:id', async (req, res) => {
     if(post.user_id === req.session.userId) {
       // CREATE NEW SESSION PARAMETER TO FLAG FOR USER'S POST IN HANDLEBARS
       req.session.userPost = true;
-    };
+    } else {
+      req.session.userPost = false;
+    }
 
     // FIND ALL COMMENTS ASSOCIATED TO THE POST ID
     // INCLUDE COMMENTER'S NAME FROM ASSOCIATION OF USER MODEL TO COMMENT MODEL
